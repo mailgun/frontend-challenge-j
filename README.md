@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Frontend Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Job listings with filtering
 
-## Available Scripts
+![Design preview for the Job listings with filtering coding challenge](./design/desktop-design.jpg)
 
-In the project directory, you can run:
+## The challenge
 
-### `npm start`
+Your challenge is to build out this job listing page and get it looking as close to the design as possible.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You should complete this challenge using React with JavaScript or Typescript.  O, you can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Setup
+An initial application has been set up for you using [create-react-app](https://create-react-app.dev/).  You will use this as a base to complete the challenge.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To set up the application move to the project directory and run `npm i`
 
-### `npm run build`
+To run the application run `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run unit tests run `npm test`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You should see the application running on http://localhost:3000/ 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For now, all the app does is print `Hello` to the screen.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Your users should be able to:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- View the layout for the site in desktop and/or mobile resolutions
+- See hover states for all interactive elements on the page
+- Filter job listings based on the categories
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Filtering
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Use the [data.json](./src/data.json) file to pull the data and then dynamically add the content.
 
-## Learn More
+To add a filter, the user needs to click on the tablets on the right-side of the listing on desktop or the bottom on mobile. For each filter added, only listings containing all selected filters should be returned.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Where to find everything
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. Implementing either design is fine.
 
-### Code Splitting
+The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+You will find all the required assets in the `src/images` folder. The assets are already optimized.
 
-### Analyzing the Bundle Size
+There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project requirements
 
-### Making a Progressive Web App
+1. Create a fork of this repo on GitHub.
+1. Create your application, implementing the features described above.
+   - View the layout for the site in desktop and/or mobile resolutions
+   - See hover states for all interactive elements on the page
+   - Filter job listings based on the categories
+1. Bonus points for:
+   - Unit Tests
+   - Responsive design
+   - Hosting the app for preview
+   - Thorough README doc
+   - Well commented code
+   - Good organization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## (Optional) Deploying your project
 
-### Advanced Configuration
+As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [GitHub Pages](https://pages.github.com/)
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
 
-### Deployment
+You can host your site using one of these solutions or any other provider you trust. [Read more about recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Create a custom `README.md`
 
-### `npm run build` fails to minify
+We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The template provides a guide for what to add. A custom `README` will help you explain your project. Please feel free to edit our template as much as you like.
+
+Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+
+## Submitting your solution
+
+Provide your technical recruiter contact with a link to your fork or add any recommended reviewers to your fork.
+
+**Have fun building!** 🚀
