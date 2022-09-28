@@ -11,8 +11,8 @@ on:
       - master
 
 jobs:
-  ci:
-    name: ci
+  lint:
+    name: lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -22,7 +22,25 @@ jobs:
         run: npm install
       - name: Lint
         run: npx eslint ./
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v3
+      - name: Install dependencies
+        run: npm install
       - name: Test
         run: npm run test
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v3
+      - name: Install dependencies
+        run: npm install
       - name: Build
         run: npm run build
